@@ -23,6 +23,7 @@ dependencies {
 	implementation(platform(SpringBootPlugin.BOM_COORDINATES))
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
+	implementation("org.apache.httpcomponents.client5:httpclient5:5.5")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
