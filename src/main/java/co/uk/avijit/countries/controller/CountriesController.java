@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 public class CountriesController {
 
-    private CountriesService countriesService;
+    private final CountriesService countriesService;
 
     public CountriesController(CountriesService countriesService) {
         this.countriesService = countriesService;
@@ -21,7 +21,7 @@ public class CountriesController {
 
     @GetMapping("/countries")
     public List<Countries> countries(@RequestParam("fields")String[] fields) {
-        return Collections.emptyList();
+        return countriesService.getCountries();
     }
 
 }
