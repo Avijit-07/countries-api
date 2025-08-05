@@ -7,7 +7,7 @@ plugins {
 	id("com.diffplug.spotless") version "7.2.1"
 }
 
-group = "co.uk.avijit.countries"
+group = "co.uk.avijit.api.countries"
 
 java {
 	toolchain {
